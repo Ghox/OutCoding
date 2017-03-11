@@ -11,7 +11,6 @@ function converToHtml(json, deep) {
     var totalKeys = Object.keys(json);
     totalKeys.forEach(function(key) {
         if (typeof(json[key]) === "object" && json[key] != null) {
-            console.log(deep);
             var structure = {};
             if (json[key].length == null) {
                 structure = {
